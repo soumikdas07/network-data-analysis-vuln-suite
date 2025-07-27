@@ -1,0 +1,133 @@
+
+    <html>
+    <head>
+        <title>Network Analysis Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background-color: #f7f7f7;
+            }
+            h1 {
+                color: #333;
+            }
+            pre {
+                background-color: #fff;
+                border: 1px solid #ccc;
+                padding: 10px;
+                overflow-x: auto;
+                white-space: pre-wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Network Analysis Report</h1>
+        <p><strong>Generated on:</strong> 2025-07-28 03:41:33</p>
+
+        <h2> Nmap Scan Summary</h2>
+        <pre># Nmap 7.97 scan initiated Mon Jul 28 02:54:22 2025 as: nmap -sV -oN output/nmap_127_0_0_1.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0011s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+445/tcp   open  microsoft-ds?
+1042/tcp  open  afrog?
+1043/tcp  open  ssl/boinc?
+1521/tcp  open  oracle-tns    Oracle TNS listener 11.2.0.2.0 (unauthorized)
+8080/tcp  open  http          Oracle XML DB Enterprise Edition httpd
+50001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1042-TCP:V=7.97%I=7%D=7/28%Time=68869912%P=i686-pc-windows-windows%
+SF:r(GetRequest,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\r
+SF:\nContent-Security-Policy:\x20default-src\x20'none'\r\nCross-Origin-Res
+SF:ource-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nReferr
+SF:er-Policy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-age=1555
+SF:2000;\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nX-D
+SF:NS-Prefetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX-Frame
+SF:-Options:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20none\r
+SF:\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf-
+SF:8\r\nContent-Length:\x20139\r\nDate:\x20Sun,\x2027\x20Jul\x202025\x2021
+SF::24:34\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\
+SF:x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Error</tit
+SF:le>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</html>\n
+SF:")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Orig
+SF:in,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:\
+SF:x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20S
+SF:un,\x2027\x20Jul\x202025\x2021:24:34\x20GMT\r\nConnection:\x20close\r\n
+SF:\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20
+SF:Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Metho
+SF:ds:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\
+SF:x20Sun,\x2027\x20Jul\x202025\x2021:24:34\x20GMT\r\nConnection:\x20close
+SF:\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSStatusRequestTCP,
+SF:2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n"
+SF:)%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
+SF:\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n")%r(TerminalServerCookie,2F,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(TLSSessionReq,2
+SF:F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1043-TCP:V=7.97%T=SSL%I=7%D=7/28%Time=6886991D%P=i686-pc-windows-wi
+SF:ndows%r(GetRequest,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Or
+SF:igin\r\nContent-Security-Policy:\x20default-src\x20'none'\r\nCross-Orig
+SF:in-Resource-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\n
+SF:Referrer-Policy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-ag
+SF:e=15552000;\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff\
+SF:r\nX-DNS-Prefetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX
+SF:-Frame-Options:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20
+SF:none\r\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charse
+SF:t=utf-8\r\nContent-Length:\x20139\r\nDate:\x20Sun,\x2027\x20Jul\x202025
+SF:\x2021:24:45\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n
+SF:<html\x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Erro
+SF:r</title>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</h
+SF:tml>\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x
+SF:20Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Met
+SF:hods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate
+SF::\x20Sun,\x2027\x20Jul\x202025\x2021:24:45\x20GMT\r\nConnection:\x20clo
+SF:se\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVar
+SF:y:\x20Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow
+SF:-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\n
+SF:Date:\x20Sun,\x2027\x20Jul\x202025\x2021:24:45\x20GMT\r\nConnection:\x2
+SF:0close\r\n\r\n")%r(FourOhFourRequest,34A,"HTTP/1\.1\x20404\x20Not\x20Fo
+SF:und\r\nVary:\x20Origin\r\nContent-Security-Policy:\x20default-src\x20's
+SF:elf'\x20blob:\x20127\.0\.0\.1:\*;script-src\x20'self'\x20'unsafe-inline
+SF:';block-all-mixed-content;style-src\x20'self';connect-src\x20'self'\x20
+SF:ws:\x20wss:\x20blob:\x20127\.0\.0\.1:\*\x20api\.giphy\.com;worker-src\x
+SF:20'self'\x20blob:\x20127\.0\.0\.1:\*;img-src\x20'self'\x20data:\x20blob
+SF::\x20127\.0\.0\.1:\*;base-uri\x20'self';font-src\x20'self'\x20https:\x2
+SF:0data:;form-action\x20'self';frame-ancestors\x20'self';object-src\x20'n
+SF:one';script-src-attr\x20'none'\r\nCross-Origin-Resource-Policy:\x20cros
+SF:s-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nReferrer-Policy:\x20no-refe
+SF:rrer\r\nStrict-Transport-Security:\x20max-age=15552000;\x20includeSubDo
+SF:mains\r\nX-Content-Type-Options:\x20nosniff\r\nX-DNS-Prefetch-Control:\
+SF:x20off\r\nX-Download-Options:\x20noopen\r\nX-Frame-Options:\x20SAMEORIG
+SF:IN\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nX-XSS-Protection:\x
+SF:200\r\nDate:\x20Sun,\x2027\x20Jul\x202025\x2021:24:45\x20GMT\r\nConnect
+SF:ion:\x20close\r\n\r\n");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 28 02:55:13 2025 -- 1 IP address (1 host up) scanned in 51.13 seconds
+</pre>
+
+        <h2> Packet Capture Summary</h2>
+        <pre>📦 IP Communication Summary:
+   - 162.159.134.234 ➜ 192.168.29.228: 3 packets
+   - 192.168.29.228 ➜ 162.159.134.234: 2 packets
+   - 192.168.29.228 ➜ 224.0.0.22: 1 packets
+   - 192.168.29.228 ➜ 13.107.139.11: 2 packets
+   - 13.107.139.11 ➜ 192.168.29.228: 1 packets
+
+📡 Protocol Breakdown:
+   - TCP: 8 packets
+   - OTHER: 1 packets</pre>
+
+        <footer style="margin-top: 30px;">
+            Report generated by <strong>NetIntel Suite</strong>
+        </footer>
+    </body>
+    </html>
+    
